@@ -9,16 +9,16 @@ function Services(props) {
       } md:mx-auto`}
     >
       <div className="lg:pt-40 md:pt-14 pt-14">
-        <p className="  text-textGreish w-3/4 mx-auto md:w-full text-3xl lg:text-lg lg:text-left lg:pb-4  md:text-lg md:text-left md:pb-4">
+        <p className="  text-textDarkSmall w-3/4 mx-auto md:w-full text-3xl lg:text-lg lg:text-left lg:pb-4  md:text-lg md:text-left md:pb-4">
           OUR SERVICES
-          <span className="bg-blue-600  rounded-full w-9 flex p-1 mt-2"> </span>
+          <span className="bg-linearGrad rounded-full w-9 flex p-1 mt-2"> </span>
         </p>
-        <p className="text-black w-3/4 mx-auto md:w-full font-bold text-3xl  lg:text-4xl lg:text-left lg:pb-10 md:text-4xl md:text-left md: pb-10">
+        <p className="text-textDark w-3/4 mx-auto md:w-full font-bold text-3xl  lg:text-4xl lg:text-left lg:pb-10 md:text-4xl md:text-left md: pb-10">
           Providing Expert Services
         </p>
       </div>
       <div
-        className={`w-3/4 mx-auto md:w-auto grid grid-cols-1 ${props.MdgridCol} gap-10 mt-8`}
+        className={`w-3/4 mx-auto md:w-auto grid grid-cols-1 ${props.MdgridCol} lg:grid-cols-3 gap-10 mt-8`}
       >
         <Cards
           imgsrc="/Images/card1.PNG"

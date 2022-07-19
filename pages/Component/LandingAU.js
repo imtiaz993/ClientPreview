@@ -20,7 +20,7 @@ function LandingAU(props) {
                 {props.title5}
             </p>
             <div className="flex justify-center pt-5 lg:justify-start lg:pt-0 md:justify-start md:pt-0 ">
-            <button className="bg-blue-500 text-white w-36 h-12 text-base py-2 px-4 rounded-[30px]">
+            <button className="bg-linearGrad text-white w-36 h-12 text-base py-2 px-4 rounded-[30px]">
               Learn more
             </button>
             </div>
@@ -28,7 +28,7 @@ function LandingAU(props) {
            
           </div>
           <div className="lg:flex lg:flex-col justify-center md:flex md:flex-col lg:w-2/3 md:w-2/3    ">
-          <p className="w-3/4  md:w-2/3 text-black text-3xl font-bold text-left lg:font-bold md:font-bold lg:text-3xl lg:text-left md:text-left md:text-3xl pb-10 ml-16">
+          <p className="w-3/4  md:w-2/3 text-Flandingtext1 text-3xl font-bold text-left lg:font-bold md:font-bold lg:text-3xl lg:text-left md:text-left md:text-3xl pb-10 ml-16">
               {props.title}
             </p>
             <img className="ml-12" src={props.imgsrc} width="70%"></img>

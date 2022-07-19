@@ -13,14 +13,14 @@ const ResHeader = () => {
           </div>
 
           <div
-            class="nav-btn inline-block absolute left-0 top-0 mt-[5px] md:hidden"
+            className="nav-btn inline-block absolute left-0 top-0 mt-[5px] md:hidden"
             onClick={() => {
               setExpanded(!expanded);
             }}
           >
             <label
               className="inline-block w-[50px] h-[50px] p-[12px]"
-              for="nav-check "
+              htmlfor="nav-check "
             >
               <span className="block w-[25px] h-[6px] border-b-[3px] border-darkBlue "></span>
               <span className="block w-[25px] h-[6px] border-b-[3px] border-darkBlue "></span>

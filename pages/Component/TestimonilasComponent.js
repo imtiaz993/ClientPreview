@@ -1,8 +1,18 @@
 import React from "react";
 
-const TestimonilasComponent = ({ userImg, review, userName, ratingImg,MDwidth }) => {
+const TestimonilasComponent = ({
+  userImg,
+  review,
+  userName,
+  ratingImg,
+  MDwidth,
+  MDPading,
+  lgPading,
+}) => {
   return (
-    <div className={`mb-12 flex flex-col items-center w-100% lg:flex lg:flex-col lg:w-2/5 ${MDwidth}`}>
+    <div
+      className={` lg:mb-6  flex flex-col items-center w-100% lg:flex lg:flex-col lg:w-[45%] ${MDwidth} ${MDPading} ${lgPading}`}
+    >
       <img src={userImg} width="75px" className="rounded-full relative top-8" />
       <div className="bg-white rounded-3xl shadow-2xl text-center py-4 pt-10 px-3  md:text-base lg:text-base">
         <p>{review}</p>

@@ -6,15 +6,15 @@ const Testimonilas = (props) => {
     <div className="">
       <div className="w-3/4 mx-auto lg:w-3/4 lg:mx-auto md:w-11/12 md:mx-auto  lg:pt-20  md:pt-24 pt-5 ">
         <p
-          className={` w-auto text-textGreish  text-4xl text-left pb-4 lg:text-lg lg:text-left lg:pb-4 ${props.MDText} md:text-left md:pb-4`}
+          className={` w-auto text-Flandingtext  text-4xl text-left pb-4 lg:text-lg lg:text-left lg:pb-4 ${props.MDText} md:text-left md:pb-4`}
         >
           OUR CLIENTS
           <span
-            className={`bg-blue-600  rounded-full w-9 lg:w-9 ${props.MDwidth1} flex p-1 mt-2`}
+            className={`bg-linearGrad  rounded-full w-9 lg:w-9 ${props.MDwidth1} flex p-1 mt-2`}
           ></span>
         </p>
         <p
-          className={`text-black font-bold text-3xl text-left lg:text-4xl lg:text-left lg:pb-10 ${props.MDText1} md:text-left pb-8`}
+          className={`text-Flandingtext1 font-bold text-3xl text-left lg:text-4xl lg:text-left lg:pb-10 ${props.MDText1} md:text-left pb-8`}
         >
           Testimonilas
         </p>

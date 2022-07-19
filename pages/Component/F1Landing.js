@@ -10,20 +10,20 @@ function F1Landing(props) {
               {props.title}
             </p>
             <p className="  text-textGreish w-3/4 mx-auto md:w-full text-3xl md:text-lg lg:text-left pb-2 mt-4 md:mt-0">
-              {props.landTitle} Dummy Text
-              <span className="bg-blue-600  rounded-full w-9 flex p-1  mt-2 mb-1"></span>
+              {props.landTitle} 
+              <span className="bg-linearGrad  rounded-full w-9 flex p-1  mt-2 mb-1"></span>
             </p>
 
-            <p className="text-textGreish w-3/4 mx-auto md:w-full font-bold text-3xl text-left lg:text-3xl lg:text-left lg:pb-8 lg:p lg:t-4 md:text-2xl md:text-left pb-8 md:top-4">
+            <p className="text-Flandingtext1 w-3/4 mx-auto md:w-full font-bold text-3xl text-left lg:text-3xl lg:text-left lg:pb-8 lg:p lg:t-4 md:text-2xl md:text-left pb-8 md:top-4">
               {props.landCapTitle}
             </p>
-            <p className=" w-auto text-textGreish  text-base text-left lg:text-sm lg:text-left lg:pb-5 md:text-left md:text-sm md:pb-5">
+            <p className=" w-auto text-Flandingtext  text-base text-left lg:text-sm lg:text-left lg:pb-5 md:text-left md:text-sm md:pb-5">
               {props.title3}
             </p>
-            <p className=" w-auto text-textGreish text-base  text-left pb-5 lg:text-sm lg:text-left lg:pb-5 md:text-left md:text-sm md:pb-5">
+            <p className=" w-auto text-Flandingtext text-base  text-left pb-5 lg:text-sm lg:text-left lg:pb-5 md:text-left md:text-sm md:pb-5">
               {props.title2}
             </p>
-            <button className="bg-blue-500 text-white w-36 h-12 md:h-10 lg:h-12 text-base  rounded-[30px] mt-4 mb-6 md:mb-0">
+            <button className="bg-linearGrad text-white w-36 h-12 md:h-10 lg:h-12 text-base  rounded-[30px] mt-4 mb-6 md:mb-0">
               Learn more
             </button>
           </div>

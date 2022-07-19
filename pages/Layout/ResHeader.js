@@ -20,7 +20,7 @@ const ResHeader = () => {
           >
             <label
               className="inline-block w-[50px] h-[50px] p-[12px]"
-              htmlfor="nav-check "
+              htmlFor="nav-check "
             >
               <span className="block w-[25px] h-[6px] border-b-[3px] border-darkBlue "></span>
               <span className="block w-[25px] h-[6px] border-b-[3px] border-darkBlue "></span>

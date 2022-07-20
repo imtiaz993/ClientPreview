@@ -43,6 +43,7 @@ const ResHeader = ({ headerLinks }) => {
           </div>
           <div
             className={
+              
               expanded
                 ? `transition-height duration-200 ease-in bg-lightGrey  block w-full text-lg text-center pt-6 mt-[11px]  overflow-y-hidden top-[50px] left-0 md:inline md:float-right h-[100vh] md:text-right  md:h-auto  md:p-0 md:m-0  ${
                     route.asPath == "/" ? " md:bg-lightGrey" : "md:bg-white"

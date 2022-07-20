@@ -2,10 +2,11 @@ import React from "react";
 import Link from "next/link";
 import { useRouter } from "next/router";
 
-const ResHeader = () => {
+const ResHeader = ({ headerLinks }) => {
   const route = useRouter();
+
   const [expanded, setExpanded] = React.useState(false);
-  console.log();
+
   return (
     <div className={`Nvbar fixed z-10 w-full max-w-screen-2xl bg-white ${route.asPath=="/"?" md:bg-lightGrey":"" }`}>
       <div className="nav md:flex h-[55px] md:h-auto py-[6px] px-[0px]  lg:w-3/4 md:mx-auto  relative w-full  md:items-center md:py-[20px] pb-[20px] border-b shadow-sm md:shadow-none md:border-none">
@@ -37,62 +38,24 @@ const ResHeader = () => {
               : `transition-all duration-200 ease-in bg-lightGrey  block  w-full  text-lg  text-center mt-[11px]  md:mt-0 overflow-y-hidden top-[50px] left-0 md:inline md:h-auto md:float-right md:text-right h-[0]  md:pt-0  ${route.asPath=="/"?" md:bg-lightGrey":"md:bg-white" }`
           }
         >
-          <Link
-            href="/OurServices"
-            className="w-full text-white py-[13px] px-[10px] mr-[30px] pb-[13px]"
-          >
-            <a
-              className="block my-4 md:my-0   md:inline-block text-sm md:ml-6"
-              onClick={() => {
-                setExpanded(!expanded);
-              }}
-            >
-              Our Services
-            </a>
-          </Link>
-          <Link
-            href="/About"
-            className=" w-full text-white  py-[13px] px-[10px] mr-[30px] pb-[13px]"
-          >
-            <a
-              className="block my-4 md:my-0   md:inline-block text-sm md:ml-6"
-              onClick={() => {
-                setExpanded(!expanded);
-              }}
-            >
-              About Us
-            </a>
-          </Link>
+          {headerLinks &&
+            headerLinks.data.map((link, index) => (
+              <Link
+                href={link.attributes.link}
+                className="w-full text-white py-[13px] px-[10px] mr-[30px] pb-[13px]"
+                key={index}
+              >
+                <a
+                  className="block my-4 md:my-0   md:inline-block text-sm md:ml-6"
+                  onClick={() => {
+                    setExpanded(!expanded);
+                  }}
+                >
+                  {link.attributes.name}
+                </a>
+              </Link>
+            ))}
 
-          <Link
-            href="/OurClient"
-            className=" w-full text-white py-[13px] px-[10px] mr-[30px] pb-[13px]"
-          >
-            <a
-              className="block my-4 md:my-0   md:inline-block text-sm md:ml-6"
-              onClick={() => {
-                setExpanded(!expanded);
-              }}
-            >
-              {" "}
-              Our Client
-            </a>
-          </Link>
-
-          <Link
-            href="/Contact"
-            className=" w-full text-white py-[13px] px-[10px] mr-[30px] pb-[13px]"
-          >
-            <a
-              className="block my-4 md:my-0   md:inline-block text-sm md:ml-6"
-              onClick={() => {
-                setExpanded(!expanded);
-              }}
-            >
-              {" "}
-              Contact Us
-            </a>
-          </Link>
           <button className=" md:bg-blue-500 md:text-white text-sm md:w-32 md:h-10 md:text-base md:py-2 md:px-4 md:rounded-[30px] md:ml-8 lg:ml-14 md:mr-4">
             Get Started
           </button>

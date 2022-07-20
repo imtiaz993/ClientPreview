@@ -12,7 +12,7 @@ module.exports = {
       colors: {
         lightGrey:"#F5F5F5",
         textGreish:"#373737",
-        darkBlue:"#1793FC",
+        darkBlue:"#2281FC",
         textDark:"#2C2A2A",
         textDarkBlue:"#2281FC",
         textDarkSmall:"#212020",
@@ -25,11 +25,7 @@ module.exports = {
         testimoColor:"#119BFC",
       },
       fontFamily:{
-        latoblack:'fonts/Lato-Black',
-        latolight:'fonts/Lato-Light',
-        latobold:"fonts/Lato-Bold",
-        latoregular:"fonts/Lato-Regular",
-        latothin:"fonts/Lato-Thin"
+        lato:'Lato',
       }
     },
   },

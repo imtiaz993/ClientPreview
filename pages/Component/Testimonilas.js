@@ -26,7 +26,7 @@ const Testimonilas = (props) => {
           MDwidth={props.MDwidth}
           MDPading={props.MDPading}
           lgPading={props.lgPading}
-          userImg="/Images/41.jpg"
+          userImg="/Images/41.png"
           review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione
         amet impedit "
           userName="Name Here"
@@ -36,7 +36,7 @@ const Testimonilas = (props) => {
           MDwidth={props.MDwidth}
           MDPading={props.MDPading}
           lgPading={props.lgPading}
-          userImg="/Images/41.jpg"
+          userImg="/Images/41.png"
           review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione
         amet impedit"
           userName="Name Here"
@@ -46,7 +46,7 @@ const Testimonilas = (props) => {
           MDwidth={props.MDwidth}
           MDPading={props.MDPading}
           lgPading={props.lgPading}
-          userImg="/Images/41.jpg"
+          userImg="/Images/41.png"
           review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione
         amet impedit "
           userName="Name Here"
@@ -56,7 +56,7 @@ const Testimonilas = (props) => {
           MDwidth={props.MDwidth}
           MDPading={props.MDPading}
           lgPading={props.lgPading}
-          userImg="/Images/41.jpg"
+          userImg="/Images/41.png"
           review="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione
         amet impedit"
           userName="Name Here"

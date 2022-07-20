@@ -82,7 +82,21 @@ const Contact = () => {
       </div>
       <div className="w-11/12 lg:w-3/4 mx-auto grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-14 text-center">
         <div>
-          <img src="" className="w-20 h-20 mx-auto bg-black rounded-full" />
+        <div className="w-20 h-20 mx-auto bg-black rounded-full flex justify-center">
+          <img src="/Images/location.png" className="object-contain p-4" />
+
+          </div>          <h1 className="text-xl font-semibold mt-1 mb-2">
+            Our Location On Map
+          </h1>
+          <p className="text-sm w-3/5 md:w-3/4 mx-auto">
+            Lorem Ipsum Dummy Text for location
+          </p>
+        </div>
+        <div>
+        <div className="w-20 h-20 mx-auto bg-black rounded-full flex justify-center">
+          <img src="/Images/call.png" className="object-contain p-4" />
+
+          </div>
           <h1 className="text-xl font-semibold mt-1 mb-2">
             Our Location On Map
           </h1>
@@ -91,17 +105,11 @@ const Contact = () => {
           </p>
         </div>
         <div>
-          <img src="" className="w-20 h-20 mx-auto bg-black rounded-full" />
-          <h1 className="text-xl font-semibold mt-1 mb-2">
-            Our Location On Map
-          </h1>
-          <p className="text-sm w-3/5 md:w-3/4 mx-auto">
-            Lorem Ipsum Dummy Text for location
-          </p>
-        </div>
-        <div>
-          <img src="" className="w-20 h-20 mx-auto bg-black rounded-full" />
-          <h1 className="text-xl font-semibold mt-1 mb-2">
+          <div className="w-20 h-20 mx-auto bg-black rounded-full flex justify-center">
+          <img src="/Images/email.png" className="object-contain p-4" />
+
+          </div>
+                   <h1 className="text-xl font-semibold mt-1 mb-2">
             Our Location On Map
           </h1>
           <p className="text-sm w-3/5 md:w-3/4 mx-auto">

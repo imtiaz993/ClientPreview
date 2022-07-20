@@ -6,6 +6,7 @@ import Services from "./Component/Services";
 import Sponsership from "./Component/Sponsership";
 import Testimonilas from "./Component/Testimonilas";
 export default function Index() {
+
   return (
     <div className="bg-lightGrey">
       <Landing

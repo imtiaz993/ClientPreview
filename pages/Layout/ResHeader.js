@@ -57,7 +57,7 @@ const ResHeader = ({ headerLinks }) => {
                 <Link
                   href='/OurServices'
                   className="w-full text-white py-[13px] px-[10px] mr-[30px] pb-[13px]"
-                  key={index}
+                  
                 >
                   <a
                     className="block my-4 md:my-0   md:inline-block text-sm md:ml-6"
@@ -71,7 +71,7 @@ const ResHeader = ({ headerLinks }) => {
                 <Link
                   href='About'
                   className="w-full text-white py-[13px] px-[10px] mr-[30px] pb-[13px]"
-                  key={index}
+                  
                 >
                   <a
                     className="block my-4 md:my-0   md:inline-block text-sm md:ml-6"
@@ -85,7 +85,7 @@ const ResHeader = ({ headerLinks }) => {
                 <Link
                   href='OurClient'
                   className="w-full text-white py-[13px] px-[10px] mr-[30px] pb-[13px]"
-                  key={index}
+                  
                 >
                   <a
                     className="block my-4 md:my-0   md:inline-block text-sm md:ml-6"
@@ -99,7 +99,7 @@ const ResHeader = ({ headerLinks }) => {
                 <Link
                   href='Contact'
                   className="w-full text-white py-[13px] px-[10px] mr-[30px] pb-[13px]"
-                  key={index}
+                  
                 >
                   <a
                     className="block my-4 md:my-0   md:inline-block text-sm md:ml-6"
@@ -113,7 +113,7 @@ const ResHeader = ({ headerLinks }) => {
                 <Link
                   href=''
                   className="w-full text-white py-[13px] px-[10px] mr-[30px] pb-[13px]"
-                  key={index}
+                  
                 >
                   <a
                     className="block my-4 md:my-0   md:inline-block text-sm md:ml-6"

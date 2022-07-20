@@ -8,11 +8,11 @@ function Landing(props) {
       >
         <div className="flex flex-col justify-center  md:flex md:flex-row  lg:w-2/3 md:w-1/2 pb-16 md:pb-0 ">
           <div className=" mt-20">
-            <p className="w-auto font-lato font-light text-textDark text-5xl md:text-left pb-5 lg:pb-0 md:pb-0 text-center  lg:text-[72px]  lg:text-left md:text-[72px]">
+            <p className="w-auto font-lato font-light text-textDark text-5xl md:text-left pb-5 lg:pb-0 md:pb-0 text-center  lg:text-5xl  lg:text-left md:text-5xl">
               {props.title}
             </p>
 
-            <p className=" w-auto font-lato font-black  text-darkBlue text-5xl pb-10 text-center lg:text-[72px] lg:text-left md:text-left md:pb-5 md:text-[72px]">
+            <p className=" w-auto font-lato font-black  text-darkBlue text-5xl pb-10 text-center lg:text-5xl lg:text-left md:text-left md:pb-5 md:text-5xl">
               {props.title2}
             </p>
             <p className=" w-auto font-lato font-normal text-textDarkSmall  text-xl text-center lg:text-lg lg:text-left lg:pb-10 md:text-left md:text-base md:pb-5">

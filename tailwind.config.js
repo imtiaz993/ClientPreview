@@ -23,6 +23,10 @@ module.exports = {
         Flandingtext:"#212020",
         Flandingtext1:"#0E2B47",
         testimoColor:"#119BFC",
+        fillColor:"#9E9E9E",
+        backFill:"#F5F5F5",
+        PriceFillColor:"#BEBCBC",
+        BackgroundAUcolor:"#2183FC"
       },
       fontFamily:{
         lato:'Lato',

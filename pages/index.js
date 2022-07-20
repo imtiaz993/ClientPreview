@@ -22,7 +22,6 @@ export default function Index() {
       <FLanding
         rowR="flex-row-reverse"
         colR="flex-col-reverse"
-        heading=" A Living App That Reflects The Users Actions And Habits"
         landTitle="ABOUT US"
         landCapTitle="Lorem ipsum dolor sit amet consectetur"
         title3="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."

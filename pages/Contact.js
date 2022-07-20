@@ -10,7 +10,9 @@ const Contact = () => {
         text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
       tempor incididunt ut labore et dolore magna aliqua."
       />
-      <div className="w-4/5 md:w-1/2 lg:w-3/4 mx-auto mt-16  lg:mt-28 md:mt-16 grid grid-cols-1 lg:grid-cols-2 gap-14  items-center">
+
+      <div className="max-w-screen-2xl mx-auto ">
+        <div className="w-4/5 md:w-1/2 lg:w-3/4 mx-auto mt-16  lg:mt-28 md:mt-16 grid grid-cols-1 lg:grid-cols-2 gap-14  items-center">
         <form className="flex flex-col shadow-2xl p-8">
           <h1 className="text-xl mt-4 mb-4 font-lato font-semibold text-Flandingtext1">
             Contact Us Any Time
@@ -41,10 +43,12 @@ const Contact = () => {
           />
         </form>
 
-        <div className="">
-          <p className="  text-textGreish  mx-auto md:w-full text-3xl md:text-lg lg:text-left pb-2 mt-4 md:mt-0">
-            <span className="bg-blue-600  rounded-full w-9 flex p-1  mt-2 mb-1"></span>
-          </p>
+
+          <div className="">
+            <p className="  text-textGreish  mx-auto md:w-full text-3xl md:text-lg lg:text-left pb-2 mt-4 md:mt-0">
+              <span className="bg-blue-600  rounded-full w-9 flex p-1  mt-2 mb-1"></span>
+            </p>
+
 
           <p className="font-lato font-black text-Flandingtext1  mx-auto md:w-full  text-3xl text-left lg:text-3xl lg:text-left lg:pb-8 lg:p lg:t-4 md:text-2xl md:text-left pb-8 md:top-4">
             We Want to hear from you
@@ -91,11 +95,14 @@ const Contact = () => {
           </div>{" "}
           <h1 className="text-xl font-semibold mt-1 mb-2">
             Our Location On Map
+
           </h1>
-          <p className="text-sm w-3/5 md:w-3/4 mx-auto">
-            Lorem Ipsum Dummy Text for location
+          <p className="w-11/12 mx-auto flex justify-center items-center text-center lg:text-sm md:text-xl text-black lg:w-2/5 md:w-4/6 md:flex md:justify-center md:items-center md:mx-auto md:text-center lg:flex lg:justify-center lg:items-center lg:text-center lg:mx-auto pb-10">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
+            eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
         </div>
+
         <div>
           <div className="w-20 h-20 mx-auto bg-lightGrey rounded-full flex justify-center">
             <img src="/Images/call.png" className="object-contain p-4" />
@@ -117,16 +124,20 @@ const Contact = () => {
           <p className="text-sm w-3/5 md:w-3/4 mx-auto">
             Lorem Ipsum Dummy Text for location
           </p>
+
+       
+          </div>
+
         </div>
-      </div>
-      <ContactComponent
-        contactTitle="Dont miss any update !"
-        contactDesc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione
+        <ContactComponent
+          contactTitle="Dont miss any update !"
+          contactDesc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione
         amet impedit Lorem ipsum"
-        button1Text="Subscribe"
-        button2Text="Contact us"
-        noPading="md:pt-8"
-      />
+          button1Text="Subscribe"
+          button2Text="Contact us"
+          noPading="md:pt-8"
+        />
+      </div>
     </>
   );
 };

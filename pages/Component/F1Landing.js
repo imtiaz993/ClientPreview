@@ -4,13 +4,13 @@ function F1Landing(props) {
   return (
     <div className="lg:w-4/5 lg:mr-6 lg:ml-auto  w-11/12 mt-8  mx-auto">
       <div className={` flex ${props.colR}  md:${props.rowR} `}>
-        <div className="flex flex-col justify-center   lg:w-2/3 md:w-1/2  md:pt-20 ">
+        <div className="md:mr-2 lg:mr-8 flex flex-col justify-center   lg:w-2/3 md:w-1/2  md:pt-20 ">
           <div className="">
             <p className=" text-black text-2xl   text-left  lg:text-5xl lg:text-left md:text-left md:text-4xl ">
               {props.title}
             </p>
             <p className="  text-textGreish w-3/4 mx-auto md:w-full text-3xl md:text-lg lg:text-left pb-2 mt-4 md:mt-0">
-              {props.landTitle} 
+              {props.landTitle}
               <span className="bg-linearGrad  rounded-full w-9 flex p-1  mt-2 mb-1"></span>
             </p>
 

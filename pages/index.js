@@ -6,18 +6,19 @@ import Services from "./Component/Services";
 import Sponsership from "./Component/Sponsership";
 import Testimonilas from "./Component/Testimonilas";
 export default function Index() {
-
   return (
     <div className="bg-lightGrey">
-      <Landing
-        heading=" A Living App That Reflects The Users Actions And Habits"
-        title=" IT FACTORY A"
-        title2="Digital Agency"
-        title3="Our industry consultants help address your must challenging issues by providing strategies, financial, operantional, human capital and IT services."
-        imgsrc="/Images/landing.PNG"
-      />
-      <Sponsership />
-      <Services MdgridCol="md:grid-cols-3" />
+      <div className="max-w-screen-2xl mx-auto">
+        <Landing
+          heading=" A Living App That Reflects The Users Actions And Habits"
+          title=" IT FACTORY A"
+          title2="Digital Agency"
+          title3="Our industry consultants help address your must challenging issues by providing strategies, financial, operantional, human capital and IT services."
+          imgsrc="/Images/landing.PNG"
+        />
+        <Sponsership />
+        <Services MdgridCol="md:grid-cols-3" />
+
 
       <FLanding
         rowR="flex-row-reverse"
@@ -47,10 +48,12 @@ export default function Index() {
       <ContactComponent
         contactTitle="Dont miss any update !"
         contactDesc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione
+
     amet impedit Lorem ipsum"
-        button1Text="Subscribe"
-        button2Text="Contact us"
-      />
+          button1Text="Subscribe"
+          button2Text="Contact us"
+        />
+      </div>
     </div>
   );
 }

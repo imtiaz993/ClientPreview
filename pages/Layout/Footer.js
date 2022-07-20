@@ -9,7 +9,11 @@ const Footer = () => {
         route.asPath == "/" ? "bg-lightGrey md:bg-white" : "md:bg-lightGrey"
       }`}
     >
-      <div
+
+ 
+
+      <div className="max-w-screen-2xl mx-auto ">
+            <div
         className={`lg:w-3/4 lg:mx-auto md:w-11/12 md:mx-auto py-4 grid md:grid-cols-2 lg:justify-between lg:items-center  md:justify-between md:items-center `}
       >
         <img
@@ -30,6 +34,7 @@ const Footer = () => {
           <Link href="Our-services">
             <a className="text-sm ml-6 font-lato font-medium">Contact Us</a>
           </Link>
+
         </div>
       </div>
     </div>

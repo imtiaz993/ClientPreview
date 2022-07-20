@@ -10,7 +10,9 @@ function OurServices() {
         text="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
     tempor incididunt ut labore et dolore magna aliqua."
       />
-      <Services MdgridCol="md:grid-cols-2" mdWidth="md:w-4/5" />
+
+      <div className="max-w-screen-2xl mx-auto ">
+             <Services MdgridCol="md:grid-cols-2" mdWidth="md:w-4/5" />
       <div className=" my-14  md:my-8 lg:my-20">
         <h1 className="flex justify-center items-center text-3xl font-lato font-black text-Flandingtext1 pt-10 pb-10">
           Choose your plan
@@ -76,16 +78,18 @@ function OurServices() {
             <button className="bg-blue-500 text-white mx-auto w-28 h-8 text-base  px-4 rounded-[30px] font-lato font-extrabold">
               Choose
             </button>
+            </div>
+
           </div>
         </div>
-      </div>
-      <ContactComponent
-        contactTitle="Dont miss any update !"
-        contactDesc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione
+        <ContactComponent
+          contactTitle="Dont miss any update !"
+          contactDesc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione
       amet impedit Lorem ipsum"
-        button1Text="Subscribe"
-        button2Text="Contact us"
-      />
+          button1Text="Subscribe"
+          button2Text="Contact us"
+        />
+      </div>
     </>
   );
 }

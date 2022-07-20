@@ -89,17 +89,15 @@ const Contact = () => {
         </p>
       </div>
       <div className="w-11/12 lg:w-3/4 mx-auto grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-14 text-center">
-        <div>
+      <div>
           <div className="w-20 h-20 mx-auto bg-lightGrey rounded-full flex justify-center">
             <img src="/Images/location.png" className="object-contain p-4" />
-          </div>{" "}
+          </div>
           <h1 className="text-xl font-semibold mt-1 mb-2">
             Our Location On Map
-
           </h1>
-          <p className="w-11/12 mx-auto flex justify-center items-center text-center lg:text-sm md:text-xl text-black lg:w-2/5 md:w-4/6 md:flex md:justify-center md:items-center md:mx-auto md:text-center lg:flex lg:justify-center lg:items-center lg:text-center lg:mx-auto pb-10">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua.
+          <p className="text-sm w-3/5 md:w-3/4 mx-auto">
+            Lorem Ipsum Dummy Text for location
           </p>
         </div>
 

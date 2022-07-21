@@ -19,7 +19,7 @@ const Footer = () => {
         />
  </div>
 
-      <div className="max-w-screen-2xl mx-auto ">
+      <div className="max-w-screen-2xl mx-auto py-2">
             <div
         className={`lg:w-3/4 lg:mx-auto md:w-11/12 md:mx-auto py-4 grid md:grid-cols-2 lg:justify-between lg:items-center  md:justify-between md:items-center `}
       >

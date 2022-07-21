@@ -60,7 +60,7 @@ const ResHeader = ({ headerLinks }) => {
                   
                 >
                   <a
-                    className="block my-4 md:my-0   md:inline-block text-sm md:ml-6"
+                    className="block my-4 md:my-0   md:inline-block text-sm md:ml-6 hover:text-darkBlue"
                     onClick={() => {
                       setExpanded(!expanded);
                     }}
@@ -74,7 +74,7 @@ const ResHeader = ({ headerLinks }) => {
                   
                 >
                   <a
-                    className="block my-4 md:my-0   md:inline-block text-sm md:ml-6"
+                    className="block my-4 md:my-0   md:inline-block text-sm md:ml-6 hover:text-darkBlue"
                     onClick={() => {
                       setExpanded(!expanded);
                     }}
@@ -88,7 +88,7 @@ const ResHeader = ({ headerLinks }) => {
                   
                 >
                   <a
-                    className="block my-4 md:my-0   md:inline-block text-sm md:ml-6"
+                    className="block my-4 md:my-0   md:inline-block text-sm md:ml-6 hover:text-darkBlue"
                     onClick={() => {
                       setExpanded(!expanded);
                     }}
@@ -98,11 +98,11 @@ const ResHeader = ({ headerLinks }) => {
                 </Link>
                 <Link
                   href='Contact'
-                  className="w-full text-white py-[13px] px-[10px] mr-[30px] pb-[13px]"
+                  className="w-full text-white py-[13px] px-[10px] mr-[30px] pb-[13px] hover:text-darkBlue"
                   
                 >
                   <a
-                    className="block my-4 md:my-0   md:inline-block text-sm md:ml-6"
+                    className="block my-4 md:my-0   md:inline-block text-sm md:ml-6 hover:text-darkBlue"
                     onClick={() => {
                       setExpanded(!expanded);
                     }}

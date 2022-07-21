@@ -7,12 +7,12 @@ function Cards(props) {
     >
       <img src={props.imgsrc} width="20%"></img>
       <h5
-        className={`mb-2 ${props.cardtitlecolor} text-center lg:text-xl md:text-xl text-3xl font-lato font-bold tracking-tight  `}
+        className={`mb-2 ${props.cardtitlecolor} text-center lg:text-xl md:text-xl text-xl font-lato font-bold tracking-tight  `}
       >
         {props.cardtitle}
       </h5>
       <p
-        className={`mb-3 font-normal font-lato  ${props.cardmsgcolor} text-base lg:text-base md:text-base text-center   `}
+        className={`mb-3 font-normal font-lato  ${props.cardmsgcolor} text-sm lg:text-base md:text-base text-center   `}
       >
         {props.cardmsg}
       </p>

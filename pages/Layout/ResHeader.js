@@ -60,7 +60,7 @@ const ResHeader = ({ headerLinks }) => {
                   
                 >
                   <a
-                    className="block my-4 md:my-0   md:inline-block text-sm md:ml-6 hover:text-darkBlue"
+                    className="block my-4 md:my-0  font-lato font-light text-textGreish md:inline-block text-sm md:ml-6 hover:text-darkBlue"
                     onClick={() => {
                       setExpanded(!expanded);
                     }}
@@ -74,7 +74,7 @@ const ResHeader = ({ headerLinks }) => {
                   
                 >
                   <a
-                    className="block my-4 md:my-0   md:inline-block text-sm md:ml-6 hover:text-darkBlue"
+                    className="block my-4 md:my-0 font-lato font-light text-textGreish  md:inline-block text-sm md:ml-6 hover:text-darkBlue"
                     onClick={() => {
                       setExpanded(!expanded);
                     }}
@@ -88,7 +88,7 @@ const ResHeader = ({ headerLinks }) => {
                   
                 >
                   <a
-                    className="block my-4 md:my-0   md:inline-block text-sm md:ml-6 hover:text-darkBlue"
+                    className="block my-4 md:my-0 font-lato font-light text-textGreish  md:inline-block text-sm md:ml-6 hover:text-darkBlue"
                     onClick={() => {
                       setExpanded(!expanded);
                     }}
@@ -98,11 +98,11 @@ const ResHeader = ({ headerLinks }) => {
                 </Link>
                 <Link
                   href='Contact'
-                  className="w-full text-white py-[13px] px-[10px] mr-[30px] pb-[13px] hover:text-darkBlue"
+                  className="w-full text-white py-[13px] px-[10px] mr-[30px] pb-[13px] "
                   
                 >
                   <a
-                    className="block my-4 md:my-0   md:inline-block text-sm md:ml-6 hover:text-darkBlue"
+                    className="block my-4 md:my-0 font-lato font-light text-textGreish  md:inline-block text-sm md:ml-6 hover:text-darkBlue"
                     onClick={() => {
                       setExpanded(!expanded);
                     }}
@@ -125,10 +125,10 @@ const ResHeader = ({ headerLinks }) => {
                   </a>
                 </Link>
               
-
+<Link href='/'>
             <button className=" md:bg-blue-500 md:text-white text-sm md:w-32 md:h-10 md:text-base md:py-2 md:px-4 md:rounded-[30px] md:ml-8 lg:ml-14 md:mr-4">
               Get Started
-            </button>
+            </button></Link>
           </div>
         </div>
       </div>

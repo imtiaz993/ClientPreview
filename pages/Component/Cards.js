@@ -5,7 +5,7 @@ function Cards(props) {
     <div
       className={` py-8 px-4 max-w-sm mx-auto ${props.imgColor}  rounded-lg shadow-lg flex flex-col justify-center items-center `}
     >
-      <img src={props.imgsrc} width="20%"></img>
+      <img className="w-[50px] h-[40px]" src={props.imgsrc}></img>
       <h5
         className={`mb-2 ${props.cardtitlecolor} text-center lg:text-xl md:text-xl text-xl font-lato font-bold tracking-tight  `}
       >

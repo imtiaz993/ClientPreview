@@ -14,7 +14,7 @@ const Contact = () => {
       <div className="max-w-screen-2xl mx-auto ">
         <div className="w-4/5 md:w-1/2 lg:w-3/4 mx-auto mt-16  lg:mt-28 md:mt-16 grid grid-cols-1 lg:grid-cols-2 gap-14  items-center">
         <form className="flex flex-col shadow-2xl p-8">
-          <h1 className="text-xl mt-4 mb-4 font-lato font-semibold text-Flandingtext1">
+          <h1 className="text-2xl mt-4 mb-4 font-lato font-semibold text-Flandingtext1">
             Contact Us Any Time
           </h1>
           <input
@@ -53,7 +53,7 @@ const Contact = () => {
           <p className="font-lato font-black text-Flandingtext1  mx-auto md:w-full  text-3xl text-left lg:text-3xl lg:text-left lg:pb-8 lg:p lg:t-4 md:text-2xl md:text-left pb-8 md:top-4">
             We Want to hear from you
           </p>
-          <p className=" w-auto font-lato font-medium text-black  text-base text-left lg:text-sm lg:text-left lg:pb-5 md:text-left md:text-sm md:pb-5">
+          <p className=" w-auto font-lato font-medium text-black  text-base text-left lg:text-sm lg:text-left pb-5 lg:pb-5 md:text-left md:text-sm md:pb-5">
             Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do
             eiusmod tempor incididunt ut labore et dolore magna aliqua.
           </p>
@@ -79,7 +79,7 @@ const Contact = () => {
           </p>
         </div>
       </div>
-      <div className=" my-14  md:my-8 lg:my-20 ">
+      <div className="mt-20 my-16  md:my-8 lg:my-20 ">
         <h1 className="font-black font-lato flex justify-center items-center text-3xl   text-Flandingtext1 pt-10 pb-5">
           Our Contact Details
         </h1>
@@ -91,7 +91,7 @@ const Contact = () => {
       <div className="w-11/12 lg:w-3/4 mx-auto grid grid-cols-1 md:grid-cols-3 gap-20 md:gap-14 text-center">
       <div>
           <div className="w-20 h-20 mx-auto bg-lightGrey rounded-full flex justify-center">
-            <img src="/Images/location.png" className="object-contain p-4" />
+            <img src="/Images/location.png" className="object-contain p-5" />
           </div>
           <h1 className="text-xl font-semibold mt-1 mb-2">
             Our Location On Map
@@ -103,7 +103,7 @@ const Contact = () => {
 
         <div>
           <div className="w-20 h-20 mx-auto bg-lightGrey rounded-full flex justify-center">
-            <img src="/Images/phone.png" className="object-contain p-4" />
+            <img src="/Images/phone.png" className="object-contain p-5" />
           </div>
           <h1 className="text-xl font-semibold mt-1 mb-2">
             Our Location On Map
@@ -114,7 +114,7 @@ const Contact = () => {
         </div>
         <div>
           <div className="w-20 h-20 mx-auto bg-lightGrey rounded-full flex justify-center">
-            <img src="/Images/email.png" className="object-contain p-4" />
+            <img src="/Images/email.png" className="object-contain p-5" />
           </div>
           <h1 className="text-xl font-semibold mt-1 mb-2">
             Our Location On Map

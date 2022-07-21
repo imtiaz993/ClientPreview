@@ -22,7 +22,7 @@ function LandingAU(props) {
             </p>
             <div className="flex justify-center pt-5 lg:justify-start lg:pt-0 md:justify-start md:pt-0 ">
               <button className="bg-linearGrad text-white w-36 h-12 text-base py-2 px-4 rounded-[30px]">
-                Learn more
+                Get Started
               </button>
             </div>
           </div>

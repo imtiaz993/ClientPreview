@@ -7,24 +7,24 @@ function FLanding(props) {
       <div className={`  flex ${props.colR} md:${props.rowR}`}>
         <div className="md:ml-2 lg:ml-8 flex flex-col justify-center   lg:w-2/3 md:w-1/2 ">
           <div className="">
-            <p className=" text-black text-2xl  text-left  lg:text-5xl lg:text-left">
+            <p className=" text-black text-2xl  text-left  lg:text-5xl lg:text-left ">
               {props.title}
             </p>
-            <p className="  text-Flandingtext font-lato font-light w-3/4 mx-auto md:w-full  text-left text-3xl lg:text-left pb-2 md:text-lg md:text-left md:pb-2 mt-4 md:mt-0">
+            <p className="mt-12  text-Flandingtext font-lato font-light w-3/4 mx-auto md:w-full tracking-wide text-left text-4xl lg:text-left pb-2 md:text-lg md:text-left md:pb-2  md:mt-0">
               {props.landTitle}
-              <span className="bg-blue-600  rounded-full w-9 flex p-1  mt-2 mb-1"></span>
+              <span className="bg-blue-600  rounded-full w-9 flex p-1  my-4 "></span>
             </p>
 
-            <p className=" text-Flandingtext1 font-lato font-black  w-3/4 mx-auto md:w-full text-3xl text-left lg:text-3xl lg:text-left lg:pb-8  md:text-2xl md:text-left pb-8 ">
+            <p className=" text-Flandingtext1 font-lato font-black  w-3/4 mx-auto md:w-full text-xl text-left lg:text-3xl lg:text-left lg:pb-8  md:text-2xl md:text-left pb-8 ">
               {props.landCapTitle}
             </p>
-            <p className=" w-auto text-Flandingtext font-lato font-medium text-base text-left lg:text-sm lg:text-left lg:pb-5 md:text-sm md:text-left md:pb-5 ">
+            <p className=" w-auto text-Flandingtext font-lato font-medium text-sm text-left lg:text-sm lg:text-left lg:pb-5 md:text-sm md:text-left md:pb-5 ">
               {props.title3}
             </p>
-            <p className=" w-auto text-Flandingtext text-base font-lato font-medium text-left lg:text-sm lg:text-left lg:pb-5 md:text-sm md:text-left md:pb-5 ">
+            <p className=" w-auto text-Flandingtext text-sm font-lato font-medium text-left lg:text-sm lg:text-left lg:pb-5 md:text-sm md:text-left md:pb-5 ">
               {props.title2}
             </p>
-            <p className="text-blue-600 font-lato font-semibold border-b-2 mt-2 border-blue-600 lg:w-32 md:w-32 w-32">
+            <p className="text-blue-600 font-lato font-semibold border-b-2 mt-3 border-blue-600 lg:w-32 md:w-32 w-32">
               See how it works
             </p>
           </div>

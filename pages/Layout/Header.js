@@ -13,10 +13,10 @@ function Header(props) {
             <div className="pt-5">
               <img src="/Images/logo.PNG "></img>
             </div>
-            <div className=" lg:inline-flex lg:flex-grow lg:w-auto md:inline-flex  md:w-1/2 md:ml-auto hidden">
+            <div className=" lg:inline-flex lg:flex-grow lg:w-auto md:inline-flex  md:w-1/2 md:ml-auto hidden ">
               <div className="lg:inline-flex md:inline-flex lg:flex-row md:flex-row lg:ml-auto md:ml-auto lg:w-auto   w-full lg:items-center md:items-center items-start  flex flex-col lg:h-20 md:h-20">
-                <Link href="/OurServices">
-                  <a className="font-lato font-light lg:inline-flex  lg:w-auto w-full text-base md:text-sm px-3 py-2 md:ml-5 md:p-0 rounded text-textGreish  items-center justify-center  lg:px-3 lg:py-2">
+                <Link  href="/OurServices">
+                  <a className="font-lato font-light lg:inline-flex  lg:w-auto w-full text-base md:text-sm px-3 py-2 md:ml-5 md:p-0 rounded text-textGreish  items-center justify-center  lg:px-3 lg:py-2 ">
                     Our Services
                   </a>
                 </Link>

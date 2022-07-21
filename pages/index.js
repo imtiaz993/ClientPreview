@@ -25,8 +25,8 @@ export default function Index() {
         colR="flex-col-reverse"
         landTitle="ABOUT US"
         landCapTitle="Lorem ipsum dolor sit amet consectetur"
-        title3="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        title2="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderi t in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        title3="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua."
+        title2="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh"
         imgsrc="/Images/landing1.PNG"
       />
       <F1Landing
@@ -34,8 +34,8 @@ export default function Index() {
         colR="flex-col-reverse"
         heading=" A Living App That Reflects The Users Actions And Habits"
         landCapTitle="Lorem ipsum dolor sit amet consectetur"
-        title3="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua."
-        title2="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderi t in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+        title3="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua."
+        title2="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh"
         imgsrc="/Images/landing2.PNG"
       />
       <Testimonilas

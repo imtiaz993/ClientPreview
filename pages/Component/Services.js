@@ -11,9 +11,9 @@ function Services(props) {
       <div className="md:pt-14 pt-14">
         <p className="  text-textDarkSmall font-lato font-light w-3/4 mx-auto md:w-full text-3xl lg:text-xl lg:text-left lg:pb-4  md:text-lg md:text-left md:pb-4">
           OUR SERVICES
-          <span className="bg-linearGrad rounded-full w-9 flex p-1 mt-2"> </span>
+          <span className="bg-linearGrad rounded-full w-9 flex p-1 my-4"> </span>
         </p>
-        <p className="text-textDark font-lato font-black w-3/4 mx-auto md:w-full  text-3xl  lg:text-4xl lg:text-left lg:pb-10 md:text-4xl md:text-left md: pb-10">
+        <p className="text-textDark font-lato font-black w-3/4 mx-auto md:w-full  text-2xl  lg:text-4xl lg:text-left lg:pb-10 md:text-4xl md:text-left md: pb-10">
           Providing Expert Services
         </p>
       </div>
@@ -26,7 +26,7 @@ function Services(props) {
         cardmsgcolor="text-cardtextcolor"
           imgsrc="/Images/card1.PNG"
           cardtitle="Website Design"
-          cardmsg="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer"
+          cardmsg="Lorem Ipsum is simply dummy text of the printing and typesetting industry. it has been the industry's standard "
         />
         <Cards
         imgColor="bg-BackgroundAUcolor"
@@ -34,7 +34,7 @@ function Services(props) {
         cardmsgcolor="text-white"
           imgsrc="/Images/card2.PNG"
           cardtitle="Mobile Apps"
-          cardmsg="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer"
+          cardmsg="Lorem Ipsum is simply dummy text of the printing and typesetting industry. it has been the industry's standard "
         />
         <Cards
         imgColor="bg-white"
@@ -42,7 +42,7 @@ function Services(props) {
         cardmsgcolor="text-cardtextcolor"
           imgsrc="/Images/card3.PNG"
           cardtitle="Online Stores"
-          cardmsg="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer"
+          cardmsg="Lorem Ipsum is simply dummy text of the printing and typesetting industry. it has been the industry's standard "
         />
         <Cards
         imgColor="bg-white"
@@ -50,7 +50,7 @@ function Services(props) {
         cardmsgcolor="text-cardtextcolor"
           imgsrc="/Images/card4.png"
           cardtitle="SEO"
-          cardmsg="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer"
+          cardmsg="Lorem Ipsum is simply dummy text of the printing and typesetting industry. it has been the industry's standard "
         />
         <Cards
         imgColor="bg-white"
@@ -58,7 +58,7 @@ function Services(props) {
         cardmsgcolor="text-cardtextcolor"
           imgsrc="/Images/card5.png"
           cardtitle="Branding Design"
-          cardmsg="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer"
+          cardmsg="Lorem Ipsum is simply dummy text of the printing and typesetting industry. it has been the industry's standard "
         />
         <Cards
         imgColor="bg-white"
@@ -66,7 +66,7 @@ function Services(props) {
         cardmsgcolor="text-cardtextcolor"
           imgsrc="/Images/card6.png"
           cardtitle="Testing Services"
-          cardmsg="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer"
+          cardmsg="Lorem Ipsum is simply dummy text of the printing and typesetting industry. it has been the industry's standard "
         />{" "}
       </div>
     </div>

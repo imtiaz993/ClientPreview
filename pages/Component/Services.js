@@ -8,7 +8,7 @@ function Services(props) {
         props.mdWidth ? props.mdWidth : "md:w-11/12"
       } md:mx-auto`}
     >
-      <div className="lg:pt-40 md:pt-14 pt-14">
+      <div className="md:pt-14 pt-14">
         <p className="  text-textDarkSmall font-lato font-light w-3/4 mx-auto md:w-full text-3xl lg:text-xl lg:text-left lg:pb-4  md:text-lg md:text-left md:pb-4">
           OUR SERVICES
           <span className="bg-linearGrad rounded-full w-9 flex p-1 mt-2"> </span>

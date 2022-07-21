@@ -10,7 +10,14 @@ const Footer = () => {
       }`}
     >
 
- 
+ <div className={` md:hidden lg:hidden flex justify-center items-center pt-8 pb-8 ${
+        route.asPath == "/" ? "bg-white " : "bg-lightGrey"
+      }`}>
+ <img
+          src="/Images/logo.PNG"
+          width="120px"
+        />
+ </div>
 
       <div className="max-w-screen-2xl mx-auto ">
             <div
@@ -23,16 +30,16 @@ const Footer = () => {
         />
         <div className=" flex justify-evenly px-4 md:block md:px-0">
           <Link href="Our-services">
-            <a className="text-sm font-lato font-medium">Our Services</a>
+            <a className="text-xs md:text-sm font-lato font-medium">Our Services</a>
           </Link>
           <Link href="Our-services">
-            <a className="text-sm ml-6 font-lato font-medium">Our Clients</a>
+            <a className="text-xs md:text-sm md:ml-6 ml-2 font-lato font-medium">Our Clients</a>
           </Link>
           <Link href="Our-services">
-            <a className="text-sm ml-6 font-lato font-medium">About Us</a>
+            <a className="text-xs md:text-sm md:ml-6 ml-2 font-lato font-medium">About Us</a>
           </Link>
           <Link href="Our-services">
-            <a className="text-sm ml-6 font-lato font-medium">Contact Us</a>
+            <a className="text-xs md:text-sm md:ml-6 ml-2 font-lato font-medium">Contact Us</a>
           </Link>
 
         </div>

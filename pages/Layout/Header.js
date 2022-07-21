@@ -3,7 +3,7 @@ import Link from "next/link";
 function Header(props) {
   return (
     <div
-      className={`${props.bgColor} lg:${props.bgColor1} md:${props.bgColor2} max-w-screen-2xl mx-auto `}
+      className={`${props.bgColor} lg:${props.bgColor1} md:${props.bgColor2} max-w-screen-2xl mx-auto hidden md:block lg:block`}
     >
       <div className="w-3/4 mx-auto lg:w-3/4 lg:mx-auto md:w-11/12 md:mx-auto ">
         <div

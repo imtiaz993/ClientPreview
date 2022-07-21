@@ -1,3 +1,4 @@
+import Link from "next/link";
 import React from "react";
 
 const ContactComponent = ({
@@ -7,6 +8,7 @@ const ContactComponent = ({
   button2Text,
   noPading,
 }) => {
+  
   return (
     <div
       className={`text-center pt-16 pb-12  ${
@@ -27,9 +29,10 @@ const ContactComponent = ({
           </button>
         </div>
         <div className="">
+          <Link href='/Contact'>
           <button className=" text-textGreish border-2  border-linearGrad w-36 h-12 text-base py-2 px-4 rounded-[30px] font-lato font-medium lg:mr-4">
             {button2Text}
-          </button>
+          </button></Link>
         </div>
       </div>
     </div>

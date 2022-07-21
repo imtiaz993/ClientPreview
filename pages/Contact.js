@@ -103,7 +103,7 @@ const Contact = () => {
 
         <div>
           <div className="w-20 h-20 mx-auto bg-lightGrey rounded-full flex justify-center">
-            <img src="/Images/call.png" className="object-contain p-4" />
+            <img src="/Images/phone.png" className="object-contain p-4" />
           </div>
           <h1 className="text-xl font-semibold mt-1 mb-2">
             Our Location On Map

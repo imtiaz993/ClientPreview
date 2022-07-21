@@ -24,7 +24,7 @@ function FLanding(props) {
             <p className=" w-auto text-Flandingtext text-base font-lato font-medium text-left lg:text-sm lg:text-left lg:pb-5 md:text-sm md:text-left md:pb-5 ">
               {props.title2}
             </p>
-            <p className="text-blue-600 font-latov font-semibold border-b-2 mt-2 border-blue-600 lg:w-32 md:w-32 w-32">
+            <p className="text-blue-600 font-lato font-semibold border-b-2 mt-2 border-blue-600 lg:w-32 md:w-32 w-32">
               See how it works
             </p>
           </div>

@@ -17,9 +17,11 @@ function MyApp({ Component, pageProps, headerLinks }) {
       bgColor2="bg-lightGrey"
       headerLinks={headerLinks}
     >
+    
       <Component {...pageProps} />
     </Layout>
   );
 }
 
 export default MyApp;
+//dasdaasa}

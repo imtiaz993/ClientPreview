@@ -8,9 +8,9 @@ const ResHeader = ({ headerLinks }) => {
   const [expanded, setExpanded] = React.useState(false);
 
   return (
-    <div className="max-w-screen-2xl mx-auto ">
+    <div className=" max-w-[4000px]  ">
       <div
-        className={`Nvbar fixed z-10 w-full max-w-screen-2xl bg-white ${
+        className={`Nvbar fixed z-10 w-full max-w-[4000px] bg-white ${
           route.asPath == "/" ? " md:bg-lightGrey" : ""
         }`}
       >

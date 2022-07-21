@@ -24,7 +24,7 @@ function Services(props) {
           imgColor="bg-white"
           cardtitlecolor="text-cardcolor"
         cardmsgcolor="text-cardtextcolor"
-          imgsrc="/Images/card1.png"
+          imgsrc="/Images/card1.PNG"
           cardtitle="Website Design"
           cardmsg="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer"
         />
@@ -32,7 +32,7 @@ function Services(props) {
         imgColor="bg-BackgroundAUcolor"
         cardtitlecolor="text-white"
         cardmsgcolor="text-white"
-          imgsrc="/Images/card2.png"
+          imgsrc="/Images/card2.PNG"
           cardtitle="Mobile Apps"
           cardmsg="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer"
         />
@@ -40,7 +40,7 @@ function Services(props) {
         imgColor="bg-white"
         cardtitlecolor="text-cardcolor"
         cardmsgcolor="text-cardtextcolor"
-          imgsrc="/Images/card3.png"
+          imgsrc="/Images/card3.PNG"
           cardtitle="Online Stores"
           cardmsg="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer"
         />

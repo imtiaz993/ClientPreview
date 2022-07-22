@@ -2,7 +2,8 @@ import React from "react";
 import ContactComponent from "./Component/ContactComponent";
 import Screendetails from "./Component/Screendetails";
 import Services from "./Component/Services";
-function OurServices() {
+import delve from "dlv";
+function OurServices({Service}) {
   return (
     <>
       <Screendetails
@@ -95,3 +96,8 @@ function OurServices() {
 }
 
 export default OurServices;
+export async function getServerSideProps() {
+  const res = await fetch(delve({data: `http://localhost:1337/api/sevices?populate=*&authorization=Barear ${process.env.token}`}, "data"));
+  const Service = await res.json();
+  return { props: { Service } };
+}

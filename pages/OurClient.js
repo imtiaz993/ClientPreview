@@ -3,8 +3,8 @@ import ContactComponent from "./Component/ContactComponent";
 import LandingAU from "./Component/LandingAU";
 import Screendetails from "./Component/Screendetails";
 import Testimonilas from "./Component/Testimonilas";
-
-function OurClient() {
+import delve from "dlv";
+function OurClient({Client}) {
   return (
     <>
       <Screendetails
@@ -48,3 +48,8 @@ function OurClient() {
 }
 
 export default OurClient;
+export async function getServerSideProps() {
+  const res = await fetch(delve({data: `http://localhost:1337/api/client-pages?populate=*&authorization=Barear ${process.env.token}`}, "data"));
+  const Client = await res.json();
+  return { props: { Client } };
+}

@@ -4,7 +4,10 @@ import LandingAU from "./Component/LandingAU";
 import Ourteam from "./Component/Ourteam";
 import Screendetails from "./Component/Screendetails";
 import Testimonilas from "./Component/Testimonilas";
-function About() {
+import delve from "dlv";
+function About({About}) {
+
+
   return (
     <>
       <Screendetails
@@ -47,3 +50,11 @@ function About() {
 }
 
 export default About;
+export async function getServerSideProps() {
+    const res = await fetch(delve({data: `http://localhost:1337/api/about-pages?populate=*&authorization=Barear ${process.env.token}`}, "data"));
+    const About = await res.json();
+    const res1 = await fetch(delve({data: `http://localhost:1337/api/team-details?populate=*&authorization=Barear ${process.env.token}`}, "data"));
+    const Team = await res1.json();
+    
+    return { props: { About,Team } };
+}

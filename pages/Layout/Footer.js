@@ -29,16 +29,16 @@ const Footer = () => {
           width="100px"
         />
         <div className=" flex justify-evenly px-4 md:block md:px-0">
-          <Link href="OurServices">
+          <Link href="/OurServices">
             <a className="text-xs md:text-sm font-lato font-medium  text-textGreish hover:text-darkBlue">Our Services</a>
           </Link>
-          <Link href="About">
+          <Link href="/OurClient">
             <a className="text-xs md:text-sm md:ml-6 ml-2 font-lato font-medium text-textGreish hover:text-darkBlue">Our Clients</a>
           </Link>
-          <Link href="OurClient">
+          <Link href="/About">
             <a className="text-xs md:text-sm md:ml-6 ml-2 font-lato font-medium text-textGreish hover:text-darkBlue">About Us</a>
           </Link>
-          <Link href="Contact">
+          <Link href="/Contact">
             <a className="text-xs md:text-sm md:ml-6 ml-2 font-lato font-medium text-textGreish hover:text-darkBlue">Contact Us</a>
           </Link>
 

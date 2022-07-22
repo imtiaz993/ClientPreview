@@ -1,8 +1,8 @@
 import React from "react";
 import Screendetails from "./Component/Screendetails";
 import ContactComponent from "./Component/ContactComponent";
-
-const Contact = () => {
+import delve from "dlv";
+const Contact = ({Contact}) => {
   return (
     <>
       <Screendetails
@@ -141,3 +141,8 @@ const Contact = () => {
 };
 
 export default Contact;
+export async function getServerSideProps() {
+  const res = await fetch(delve({data: `http://localhost:1337/api/contact-pages?populate=*&authorization=Barear ${process.env.token}`}, "data"));
+  const Contact = await res.json();
+  return { props: { Contact } };
+}

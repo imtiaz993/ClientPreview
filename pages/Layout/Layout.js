@@ -18,10 +18,10 @@ const Layout = (props) => {
           bgColor={props.bgColor}
           bgColor1={props.bgColor1}
           bgColor2={props.bgColor2}
-          headerLinks={props.headerLinks}
+          
         />
         {props.children}
-        <Footer />
+        <Footer footerLinks={props.footerLinks}/>
       </div>
     </div>
   );

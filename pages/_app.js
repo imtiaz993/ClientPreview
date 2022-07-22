@@ -1,21 +1,21 @@
 import "../styles/globals.css";
 import Layout from "./Layout/Layout";
-
-// MyApp.getInitialProps = async () => {
-//   let headers = { Authorization: `Barear ${process.env.token}` };
-//   const res = await fetch("http://localhost:1337/api/headers", {
-//     headers: headers,
-//   });
-//   const headerLinks = await res.json();
-//   return { headerLinks };
-// };
-function MyApp({ Component, pageProps, headerLinks }) {
+import delve from "dlv";
+MyApp.getInitialProps = async () => {
+  const res1 = await fetch(delve({data: `http://localhost:1337/api/footers?populate=*&authorization=Barear ${process.env.token}`}, "data"));
+  const headerLinks = await res1.json();
+  const res2 = await fetch(delve({data: `http://localhost:1337/api/headers?populate=*&authorization=Barear ${process.env.token}`}, "data"));
+  const footerLinks = await res2.json();
+  return { headerLinks,footerLinks };
+};
+function MyApp({ Component, pageProps, headerLinks,footerLinks }) {
   return (
     <Layout
       bgColor="bg-white"
       bgColor1="bg-lightGrey"
       bgColor2="bg-lightGrey"
       headerLinks={headerLinks}
+      footerLinks={footerLinks}
     >
     
       <Component {...pageProps} />
@@ -24,4 +24,3 @@ function MyApp({ Component, pageProps, headerLinks }) {
 }
 
 export default MyApp;
-//dasdaasa}

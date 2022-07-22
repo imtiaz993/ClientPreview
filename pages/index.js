@@ -5,7 +5,8 @@ import Landing from "./Component/Landing";
 import Services from "./Component/Services";
 import Sponsership from "./Component/Sponsership";
 import Testimonilas from "./Component/Testimonilas";
-export default function Index() {
+import delve from "dlv";
+export default function Index({Home}) {
   return (
     <div className="bg-lightGrey">
       <div className="max-w-screen-2xl mx-auto">
@@ -56,4 +57,9 @@ export default function Index() {
       </div>
     </div>
   );
+}
+export async function getServerSideProps() {
+  const res = await fetch(delve({data: `http://localhost:1337/api/homes?populate=*&authorization=Barear ${process.env.token}`}, "data"));
+  const Home = await res.json();
+  return { props: { Home } };
 }

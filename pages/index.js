@@ -6,7 +6,7 @@ import Services from "./Component/Services";
 import Sponsership from "./Component/Sponsership";
 import Testimonilas from "./Component/Testimonilas";
 import delve from "dlv";
-export default function Index({Home}) {
+export default function Index({ HomePage, Service, Testimonials, Subscribe }) {
   return (
     <div className="bg-lightGrey">
       <div className="max-w-screen-2xl mx-auto">
@@ -20,35 +20,34 @@ export default function Index({Home}) {
         <Sponsership />
         <Services MdgridCol="md:grid-cols-3" />
 
-
-      <FLanding
-        rowR="flex-row-reverse"
-        colR="flex-col-reverse"
-        landTitle="ABOUT US"
-        landCapTitle="Lorem ipsum dolor sit amet consectetur"
-        title3="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua."
-        title2="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh"
-        imgsrc="/Images/landing1.PNG"
-      />
-      <F1Landing
-        rowR="flex-row"
-        colR="flex-col-reverse"
-        heading=" A Living App That Reflects The Users Actions And Habits"
-        landCapTitle="Lorem ipsum dolor sit amet consectetur"
-        title3="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua."
-        title2="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh"
-        imgsrc="/Images/landing2.PNG"
-      />
-      <Testimonilas
-        MDwidth="md:w-2/5 md:flex"
-        MDwidth1="md:w-9"
-        MDText="md:text-lg"
-        MDText1="md=text-3xl"
-        PadingT="md:pt-0"
-      />
-      <ContactComponent
-        contactTitle="Dont miss any update !"
-        contactDesc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione
+        <FLanding
+          rowR="flex-row-reverse"
+          colR="flex-col-reverse"
+          landTitle="ABOUT US"
+          landCapTitle="Lorem ipsum dolor sit amet consectetur"
+          title3="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua."
+          title2="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh"
+          imgsrc="/Images/landing1.PNG"
+        />
+        <F1Landing
+          rowR="flex-row"
+          colR="flex-col-reverse"
+          heading=" A Living App That Reflects The Users Actions And Habits"
+          landCapTitle="Lorem ipsum dolor sit amet consectetur"
+          title3="Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod incididunt ut labore et dolore magna aliqua."
+          title2="Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in repreh"
+          imgsrc="/Images/landing2.PNG"
+        />
+        <Testimonilas
+          MDwidth="md:w-2/5 md:flex"
+          MDwidth1="md:w-9"
+          MDText="md:text-lg"
+          MDText1="md=text-3xl"
+          PadingT="md:pt-0"
+        />
+        <ContactComponent
+          contactTitle="Dont miss any update !"
+          contactDesc="Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo ratione
 
     amet impedit Lorem ipsum"
           button1Text="Subscribe"
@@ -59,7 +58,42 @@ export default function Index({Home}) {
   );
 }
 export async function getServerSideProps() {
-  const res = await fetch(delve({data: `http://localhost:1337/api/homes?populate=*&authorization=Barear ${process.env.token}`}, "data"));
-  const Home = await res.json();
-  return { props: { Home } };
+  const res = await fetch(
+    delve(
+      {
+        data: `http://localhost:1337/api/homes?populate=*&authorization=Barear ${process.env.token}`,
+      },
+      "data"
+    )
+  );
+
+  const HomePage = await res.json();
+  const res1 = await fetch(
+    delve(
+      {
+        data: `http://localhost:1337/api/service-details?populate=*&authorization=Barear ${process.env.token}`,
+      },
+      "data"
+    )
+  );
+  const Service = await res1.json();
+  const res2 = await fetch(
+    delve(
+      {
+        data: `http://localhost:1337/api/api/testimonial-details?populate=*&authorization=Barear ${process.env.token}`,
+      },
+      "data"
+    )
+  );
+  const Testimonials = await res2.json();
+  const res3 = await fetch(
+    delve(
+      {
+        data: `http://localhost:1337/api/api/subscribe-details?populate=*&authorization=Barear ${process.env.token}`,
+      },
+      "data"
+    )
+  );
+  const Subscribe = await res3.json();
+  return { props: { HomePage, Service, Testimonials, Subscribe } };
 }

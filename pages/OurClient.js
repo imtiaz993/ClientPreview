@@ -48,42 +48,42 @@ function OurClient({ ClientPage, Company, Testimonials, Subscribe }) {
 }
 
 export default OurClient;
-export async function getServerSideProps() {
-  const res = await fetch(
-    delve(
-      {
-        data: `http://localhost:1337/api/client-pages?populate=*&authorization=Barear ${process.env.token}`,
-      },
-      "data"
-    )
-  );
-  const ClientPage = await res.json();
-  const res1 = await fetch(
-    delve(
-      {
-        data: `http://localhost:1337/api/company-details?populate=*&authorization=Barear ${process.env.token}`,
-      },
-      "data"
-    )
-  );
-  const Company = await res1.json();
-  const res2 = await fetch(
-    delve(
-      {
-        data: `http://localhost:1337/api/api/testimonial-details?populate=*&authorization=Barear ${process.env.token}`,
-      },
-      "data"
-    )
-  );
-  const Testimonials = await res2.json();
-  const res3 = await fetch(
-    delve(
-      {
-        data: `http://localhost:1337/api/api/subscribe-details?populate=*&authorization=Barear ${process.env.token}`,
-      },
-      "data"
-    )
-  );
-  const Subscribe = await res3.json();
-  return { props: { ClientPage, Company, Testimonials, Subscribe } };
-}
+// export async function getServerSideProps() {
+//   const res = await fetch(
+//     delve(
+//       {
+//         data: `http://localhost:1337/api/client-pages?populate=*&authorization=Barear ${process.env.token}`,
+//       },
+//       "data"
+//     )
+//   );
+//   const ClientPage = await res.json();
+//   const res1 = await fetch(
+//     delve(
+//       {
+//         data: `http://localhost:1337/api/company-details?populate=*&authorization=Barear ${process.env.token}`,
+//       },
+//       "data"
+//     )
+//   );
+//   const Company = await res1.json();
+//   const res2 = await fetch(
+//     delve(
+//       {
+//         data: `http://localhost:1337/api/api/testimonial-details?populate=*&authorization=Barear ${process.env.token}`,
+//       },
+//       "data"
+//     )
+//   );
+//   const Testimonials = await res2.json();
+//   const res3 = await fetch(
+//     delve(
+//       {
+//         data: `http://localhost:1337/api/api/subscribe-details?populate=*&authorization=Barear ${process.env.token}`,
+//       },
+//       "data"
+//     )
+//   );
+//   const Subscribe = await res3.json();
+//   return { props: { ClientPage, Company, Testimonials, Subscribe } };
+// }

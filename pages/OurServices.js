@@ -119,34 +119,34 @@ function OurServices({ ServicePage, Service, Subscribe }) {
 }
 
 export default OurServices;
-export async function getServerSideProps() {
-  const res = await fetch(
-    delve(
-      {
-        data: `http://localhost:1337/api/sevices?populate=*&authorization=Barear ${process.env.token}`,
-      },
-      "data"
-    )
-  );
-  const ServicePage = await res.json();
-  const res1 = await fetch(
-    delve(
-      {
-        data: `http://localhost:1337/api/service-details?populate=*&authorization=Barear ${process.env.token}`,
-      },
-      "data"
-    )
-  );
-  const Service = await res1.json();
-  const res2 = await fetch(
-    delve(
-      {
-        data: `http://localhost:1337/api/api/subscribe-details?populate=*&authorization=Barear ${process.env.token}`,
-      },
-      "data"
-    )
-  );
-  const Subscribe = await res2.json();
+// export async function getServerSideProps() {
+//   const res = await fetch(
+//     delve(
+//       {
+//         data: `http://localhost:1337/api/sevices?populate=*&authorization=Barear ${process.env.token}`,
+//       },
+//       "data"
+//     )
+//   );
+//   const ServicePage = await res.json();
+//   const res1 = await fetch(
+//     delve(
+//       {
+//         data: `http://localhost:1337/api/service-details?populate=*&authorization=Barear ${process.env.token}`,
+//       },
+//       "data"
+//     )
+//   );
+//   const Service = await res1.json();
+//   const res2 = await fetch(
+//     delve(
+//       {
+//         data: `http://localhost:1337/api/api/subscribe-details?populate=*&authorization=Barear ${process.env.token}`,
+//       },
+//       "data"
+//     )
+//   );
+//   const Subscribe = await res2.json();
 
-  return { props: { ServicePage, Service, Subscribe } };
-}
+//   return { props: { ServicePage, Service, Subscribe } };
+// }

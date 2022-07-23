@@ -52,24 +52,7 @@ const ResHeader = ({ headerLinks }) => {
                   }`
             }
           >
-            {headerLinks &&
-              headerLinks.data.map((item, index) => (
-                <Link
-                  key={index}
-                  // href={item.attributes.link}
-                  href="/"
-                  className="w-full text-white py-[13px] px-[10px] mr-[30px] pb-[13px]"
-                >
-                  <a
-                    className="block my-4 md:my-0  font-lato font-light text-textGreish md:inline-block text-sm md:ml-6 hover:text-darkBlue"
-                    onClick={() => {
-                      setExpanded(!expanded);
-                    }}
-                  >
-                    {/* {item.attributes.name} */}
-                  </a>
-                </Link>
-              ))}
+        
             <Link
               href="/OurServices"
               className="w-full text-white py-[13px] px-[10px] mr-[30px] pb-[13px]"

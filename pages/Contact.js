@@ -136,24 +136,24 @@ const Contact = ({ ContactPage, Subscribe }) => {
 };
 
 export default Contact;
-export async function getServerSideProps() {
-  const res = await fetch(
-    delve(
-      {
-        data: `http://localhost:1337/api/contact-pages?populate=*&authorization=Barear ${process.env.token}`,
-      },
-      "data"
-    )
-  );
-  const ContactPage = await res.json();
-  const res1 = await fetch(
-    delve(
-      {
-        data: `http://localhost:1337/api/api/subscribe-details?populate=*&authorization=Barear ${process.env.token}`,
-      },
-      "data"
-    )
-  );
-  const Subscribe = await res1.json();
-  return { props: { ContactPage, Subscribe } };
-}
+// export async function getServerSideProps() {
+//   const res = await fetch(
+//     delve(
+//       {
+//         data: `http://localhost:1337/api/contact-pages?populate=*&authorization=Barear ${process.env.token}`,
+//       },
+//       "data"
+//     )
+//   );
+//   const ContactPage = await res.json();
+//   const res1 = await fetch(
+//     delve(
+//       {
+//         data: `http://localhost:1337/api/api/subscribe-details?populate=*&authorization=Barear ${process.env.token}`,
+//       },
+//       "data"
+//     )
+//   );
+//   const Subscribe = await res1.json();
+//   return { props: { ContactPage, Subscribe } };
+// }

@@ -48,51 +48,51 @@ function About({ AboutPage, Company, Team, Testimonial }) {
 }
 
 export default About;
-export async function getServerSideProps() {
-  const res = await fetch(
-    delve(
-      {
-        data: `http://localhost:1337/api/about-pages?populate=*&authorization=Barear ${process.env.token}`,
-      },
-      "data"
-    )
-  );
-  const AboutPage = await res.json();
-  const res1 = await fetch(
-    delve(
-      {
-        data: `http://localhost:1337/api/company-details?populate=*&authorization=Barear ${process.env.token}`,
-      },
-      "data"
-    )
-  );
-  const Company = await res1.json();
-  const res2 = await fetch(
-    delve(
-      {
-        data: `http://localhost:1337/api/team-details?populate=*&authorization=Barear ${process.env.token}`,
-      },
-      "data"
-    )
-  );
-  const Team = await res2.json();
-  const res3 = await fetch(
-    delve(
-      {
-        data: `http://localhost:1337/api/api/testimonial-details?populate=*&authorization=Barear ${process.env.token}`,
-      },
-      "data"
-    )
-  );
-  const Testimonial = await res3.json();
-  const res4 = await fetch(
-    delve(
-      {
-        data: `http://localhost:1337/api/api/subscribe-details?populate=*&authorization=Barear ${process.env.token}`,
-      },
-      "data"
-    )
-  );
-  const Subscribe = await res4.json();
-  return { props: { AboutPage, Company, Team, Testimonial } };
-}
+// export async function getServerSideProps() {
+//   const res = await fetch(
+//     delve(
+//       {
+//         data: `http://localhost:1337/api/about-pages?populate=*&authorization=Barear ${process.env.token}`,
+//       },
+//       "data"
+//     )
+//   );
+//   const AboutPage = await res.json();
+//   const res1 = await fetch(
+//     delve(
+//       {
+//         data: `http://localhost:1337/api/company-details?populate=*&authorization=Barear ${process.env.token}`,
+//       },
+//       "data"
+//     )
+//   );
+//   const Company = await res1.json();
+//   const res2 = await fetch(
+//     delve(
+//       {
+//         data: `http://localhost:1337/api/team-details?populate=*&authorization=Barear ${process.env.token}`,
+//       },
+//       "data"
+//     )
+//   );
+//   const Team = await res2.json();
+//   const res3 = await fetch(
+//     delve(
+//       {
+//         data: `http://localhost:1337/api/api/testimonial-details?populate=*&authorization=Barear ${process.env.token}`,
+//       },
+//       "data"
+//     )
+//   );
+//   const Testimonial = await res3.json();
+//   const res4 = await fetch(
+//     delve(
+//       {
+//         data: `http://localhost:1337/api/api/subscribe-details?populate=*&authorization=Barear ${process.env.token}`,
+//       },
+//       "data"
+//     )
+//   );
+//   const Subscribe = await res4.json();
+//   return { props: { AboutPage, Company, Team, Testimonial } };
+// }
